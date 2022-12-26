@@ -1,16 +1,3 @@
-def checkPrimeNumber(num):
-    if num<1:
-        return 0
-    if num==1 or num==2 or num==3:
-        return num
-    count=num//2+1
-    for i in range(2,count):
-        if num%i==0:
-            return 0
-        return num
-inpNum=int(input("Enter a number:"))
-if checkPrimeNumber(inpNum):
-    print(inpNum," is a prime number.")
-else:
-    print(inpNum," is not a prime number.")
-    
+print('\\'*4)
+print('\\\n'*3)
+print('Good-bye')

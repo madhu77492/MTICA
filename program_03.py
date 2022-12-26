@@ -1,6 +1,6 @@
-def greet(inpstr):
-    outstr="Good Morning"+" "+inpstr
-    return outstr
-print(greet('Trainees'))
-temp=input("Enter your name:")
-print(greet(temp))
+s1="""This
+is a multi-line
+string."""
+#>>>s1
+#'This\nis a multi-line\nstring.'
+#>>>print(s1)

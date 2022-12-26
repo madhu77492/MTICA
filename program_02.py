@@ -1,5 +1,4 @@
-def greet():
-    inpstr=input("Enter your name:")
-    outstr="Good Morning"+" "+inpstr
-    print(outstr)
-greet()
+print("Hello world")
+x=8
+y=10
+print("Value of x is",x,"value of y is",y)
