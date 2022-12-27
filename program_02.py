@@ -1,4 +1,12 @@
-print("Hello world")
-x=8
-y=10
-print("Value of x is",x,"value of y is",y)
+lst=[]
+while(True):
+    inpNum=int(input("Enter a value(o to end):"))
+    if inpNum==0:
+        break
+    else:
+        lst.append(inpNum)
+lst.sort()
+print("Min:",lst[0])
+print("Max:",lst[-1])
+print("avg:",round(sum(lst)/len(lst),1))
+
