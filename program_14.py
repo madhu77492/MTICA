@@ -1,10 +1,8 @@
-def count_vowel(s):
-    n_vowel=0
-    for i in s:
-        if i in 'AEIOUaeiou':
-            n_vowel+=1
-    return n_vowel
+def cube(a):
+    return a*a*a
+lst=[0,1,2,3,4,5,6,7]
+res=list(map(cube,lst))
+print(res)
 
-str1=input()
-a=count_vowel(str1)
-print("No of Vowels is :'",str1,"' is",a)
+res1=list(map(lambda x:x*x*x, lst))
+print(res1)

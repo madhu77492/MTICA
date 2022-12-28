@@ -4,8 +4,4 @@ def add_five(x):
 nums=[11, 22, 33, 44, 55]
 result=list(map(add_five,nums))
 print(nums)
-print(result)
-print('-'*40)
-
-##result=[i+5 for i in nums]
-##print(result)
+print(result)\print('-'*40)

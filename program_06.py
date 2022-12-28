@@ -1,13 +1,14 @@
-coord=[(3,9),(2,4)]
-print('first tuple: {0[0]},{0[1]},second tuple: {1[0]},{1[1]}'.format(*coord))
+'''Lst=[10,15,20,25,30,35,40,45]
+120)Use list comprehension to construct a new list
+with square of each item.'''
+##Lst=[10,15,20,25,30,35,40,45]
+##ans=[]
+##for i in Lst:
+##    ans.append(i+6)
+##print(ans)
 
-print('{:#<30}'.format("Apple"))#left aligned
-print('{:#>30}'.format("Apple"))#right aligned
-print('{:#^30}'.format("Apple"))#centered aligned
-print('{:*^30}'.format("Apple"))#use '*' as a fill char
 
-print("int: {0:d}; hex: {0:x}; oct: {0:o};bin: {0:b}".format(42,55))
-print("int: {1:d}; hex: {1:x}; oct: {1:o};bin: {1:b}".format(42,55))
-print('{:,}'.format(1234567890))
-points= 19.0; total =22
-print('Correct answers: {:.2%}'.format(points/total))
+Lst=[10,15,20,25,30,35,40,45]
+ans=[i*i for i in Lst]
+
+print(ans)

@@ -1,9 +1,6 @@
-string=input()
-ans=[]
-for i in string:
-    if i in'AEIOUaeiou':
-        ans.append(i)
-print(*ans)
-
-ans=[i for i in string if i in'AEIOUaeiou' ]
-print(*ans)
+nums=[11,22,33,44,55]
+import math
+print(nums)
+result=[]
+for i in nums:
+    result.append(math.sqrt(i))

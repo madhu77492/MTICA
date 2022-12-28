@@ -1,12 +1,18 @@
-lst=[]
-while(True):
-    inpNum=int(input("Enter a value(o to end):"))
-    if inpNum==0:
-        break
-    else:
-        lst.append(inpNum)
-lst.sort()
-print("Min:",lst[0])
-print("Max:",lst[-1])
-print("avg:",round(sum(lst)/len(lst),1))
+##ans=[]
+##for i in range(1,101):
+##    if i%2==0 or i%3==0 or i%4==0 or i%5==0 or i%6==0 or i%7==0 or i%8==0 or i%9==0:
+##        ans.append(i)
+##print(ans)
 
+
+##ans=[]
+##for i in range(1,101):
+##    for j in range(2,10):
+##        if i%j==0:
+##            ans.append(i)
+##            break
+##print(ans)
+
+
+ans={ i for i in range(1,101) for j in range(2,10) if i%j==0 }
+print(ans)
