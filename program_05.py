@@ -1,8 +1,20 @@
-'''Lst=[10,15,20,25,30,35,40,45]
-120)Use list comprehension to construct a new list
-but add 6 to each item.'''
-Lst=[10,15,20,25,30,35,40,45]
-ans=[]
-for i in Lst:
-    ans.append(i+6)
-print(ans)
+def div(a,b):
+    assert( isinstance(a,int) or isinstance(a,float)), \
+              'First Argument should be either Integer or float'
+    assert( isinstance(b,int) or isinstance(b,float)), \
+              'Second Argument should be either Integer or float'
+    assert(b!=0),"Division by zero is not defined !"
+    return a/b
+    
+try:
+    print(div(7,0))
+except AssertionError as obj:
+    print(obj)
+try:
+    print(div(7,6))
+except AssertionError as obj:
+    print(obj)
+try:
+    print(div(7,2))
+except AssertionError as obj:
+    print(obj)

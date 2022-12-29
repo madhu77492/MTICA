@@ -1,14 +1,17 @@
-'''Lst=[10,15,20,25,30,35,40,45]
-120)Use list comprehension to construct a new list
-with square root of each item.'''
-##Lst=[10,15,20,25,30,35,40,45]
-##ans=[]
-##for i in Lst:
-##    ans.append(i+6)
-##print(ans)
+num1=input("Enter a number:")
+num2=input("Enter a number:")
 
+try:
+    res=int(num1)/int(num2) #Execute with num2=non zero and zero 
+except ZeroDivisionError:
+    print("Exception handled by Madhu")
+except ValueError:
+    print("Exception handled by MP")
+except Exception as ob:
+    print (ob)
+else:
+    print (num1, '/' ,num2, '=',res)
+finally:
+    print("Thanks")
 
-Lst=[10,15,20,25,30,35,40,45]
-ans=[i*(1/2) for i in Lst]
-
-print(ans)
+print("visit again at python class at MTICA" )
