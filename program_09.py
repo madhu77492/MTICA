@@ -1,14 +1,4 @@
-def checkEven():
-    num1=int(input("Enter a no:"))
-    if num1%2==0:
-        print(num1, 'is even')
-    return None
-
-def checkOdd():
-    num1=int(input("Enter a no:"))
-    if num1%2==1:
-        print(num1, 'is odd')
-    return None
-
-checkEven()
-checkOdd()
+fo=open(r"D:\Python_Practice31\Day9\Madhu.txt","r")
+temp=fo.read()
+fo.close()
+print(temp)

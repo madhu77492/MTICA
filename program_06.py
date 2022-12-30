@@ -1,10 +1,15 @@
-num1=int(input("Enter a number:"))
-num2=int(input("Enter a number"))
+message='Hello world'
+dict1 = {1:'a', 2:'b'}
 
-try:
-    res=num1/num2 #Execute with num2=non zero and zero 
-except ZeroDivisionError:
-    print("Division by zero not allowed")
-else:
-    print (num1, '/' ,num2, '=',res)
-print('Thanks')
+print('H' in message)
+
+print('hello' not in message)
+
+print(1 in dict1)
+
+print('a' in dict1)
+
+lst1=[10,20,30,'c','java','python']
+print('java' in lst1)
+print('R' in lst1)
+print('R' not in lst1)

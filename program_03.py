@@ -1,23 +1,11 @@
-def Factorial(num):
-    assert(isinstance(num,int)),"Factorial o defined for non integer !"
-    assert(num>=0),"Factorial of negative number is not defined !"
-    if num==0:
-        return 1
-    else:
-        return num*Factorial(num-1)
-try:
-    print(Factorial(-7))
-except Exception as obj:
-    print(obj)
-try:
-    print(Factorial(7))
-except Exception as obj:
-    print(obj)
-try:
-    print(Factorial(7.7))
-except Exception as obj:
-    print(obj)
-try:
-    print(Factorial('Madhu'))
-except Exception as obj:
-    print(obj)
+def printSeries(n):
+    num=1
+    for i in range(1,n+1):
+        print()
+        for j in  range(i):
+            print(num,end=' ')
+            num+=1
+    return None
+
+inpNum=int(input())
+printSeries(inpNum)

@@ -1,22 +1,10 @@
-def KelvinToFahrenheit(Temperature):
-    assert (Temperature >= 0),"Colder than absolute zero at MTICA!"
-    res=((Temperature-273)*1.8)+32
-    return res
-try:
-    print (KelvinToFahrenheit(-50))
-except Exception as ob:
-    print(ob)
-try:
-    print (KelvinToFahrenheit(273))
-except Exception as ob:
-    print(ob)
-try:
-    print (KelvinToFahrenheit(508.78))
-except Exception as ob:
-    print(ob)
-try:
-    print (KelvinToFahrenheit(-5))
-except Exception as ob:
-    print(ob)
-    
-print("Thank You")
+def printSeriesDecreasing(ch,n):
+    for i in range(n,0,-1):
+        print(ch*i)
+    return None
+
+inpCh=input("Enter a character:")
+inpNum=int(input("Enter a no:"))
+
+print('-'*40)
+printSeriesDecreasing(inpCh,inpNum)

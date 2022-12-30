@@ -1,17 +1,9 @@
-num1=input("Enter a number:")
-num2=input("Enter a number:")
+#Logical AND
+print(True and True)
+print(True and False)
 
-try:
-    res=int(num1)/int(num2) #Execute with num2=non zero and zero 
-except ZeroDivisionError:
-    print("Exception handled by Madhu")
-except ValueError:
-    print("Exception handled by MP")
-except Exception as ob:
-    print (ob)
-else:
-    print (num1, '/' ,num2, '=',res)
-finally:
-    print("Thanks")
+#Logical OR
+print(True or False)
 
-print("visit again at python class at MTICA" )
+#Logical NOT
+print(not True)
