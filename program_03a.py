@@ -1,11 +1,22 @@
-def printSeries(n):
-    for i in range(1,n+1):
-        num=1
-        print()
-        for j in  range(i):
-            print(num,end=' ')
-            num+=1
-    return None
+def fun(str1):
+    print(str1)
+    return
+fun("I'm first call to user defined function!")
+fun("Again second call to the same function")
 
-inpNum=int(input())
-printSeries(inpNum)
+def printme(str1,n):
+    n[0]='Prasad'
+    print(str1,n)
+    return
+
+x=['MP','Madhu']
+printme("Wakeup",x)
+print('x:',x)
+
+def changeMe(lstn):
+    lstn=['MP','PMS','Madhu']
+    print(lstn)
+    return
+lst=[1,4,11,55]
+print(changeMe(lst))
+print('lst:',lst)

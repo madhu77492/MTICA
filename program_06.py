@@ -1,15 +1,17 @@
-message='Hello world'
-dict1 = {1:'a', 2:'b'}
 
-print('H' in message)
+##print()
+##print('MP')
+##print('MP',77)
+##print('Madhu',77,'MP')
+#variable length argument
+def add(*n):
+    temp=0
+    for i in n:
+        temp+=i
+        return temp
 
-print('hello' not in message)
-
-print(1 in dict1)
-
-print('a' in dict1)
-
-lst1=[10,20,30,'c','java','python']
-print('java' in lst1)
-print('R' in lst1)
-print('R' not in lst1)
+print("add():",add())
+print("add(5):",add(5))
+print("add(5,7):",add(5,7))
+print("add(5,7,2):",add(5,7,2))
+print("add(5,7,2,11,55,77,22):",add(5,7,2,11,55,77,22))

@@ -1,8 +1,10 @@
-x=10
-y=4
-print('x=',x,'y=',y,'x&y=',x&y)
-print('x=',x,'y=',y,'x|y=',x|y)
-print('x=',x,'~x=',~x)
-print('x=',x,'y=',y,'x^y=',x^y)
-print('x=',x,'x>>2=',x>>2)
-print('x=',x,'x<<2=',x<<2)
+fo1=open(r"D:\Python_Practice31\Day9\Madhu2.txt","r")
+fo2=open(r"D:\Python_Practice31\Day9\Madhu.txt","w+")
+
+temp=fo1.read()
+fo2.write(temp)
+
+fo1.close()
+fo2.close()
+
+print("File copied")

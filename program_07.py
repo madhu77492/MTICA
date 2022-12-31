@@ -1,9 +1,6 @@
-#Logical AND
-print(True and True)
-print(True and False)
-
-#Logical OR
-print(True or False)
-
-#Logical NOT
-print(not True)
+fo=open(r"D:\Python_Practice31\Day9\Madhu2.txt","a")
+for i in range(5):
+    inpstr=input("Enter string:")
+    fo.write(inpstr+'\n')
+fo.close()
+print("Written to file")

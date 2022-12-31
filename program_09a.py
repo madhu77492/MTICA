@@ -1,19 +1,8 @@
-def checkEven(num1):
-    if num1%2==0:
-        return "Even"
-    return None
+import sqlite3 as lite
+con=lite.connect('mtica.db')
+cur=con.cursor()
+cur.execute("SELECT * FROM Cars")
+rows=cur.fetchall()
+for row in rows:
+    print(row)
 
-def checkOdd(num1):
-    if num1%2==1:
-        return "Odd"
-    return None
-
-num=int(input("Enter a no:"))
-x=checkEven(num)
-y=checkOdd(num)
-
-print("x=",x)
-print("y=",y)
-
-print(checkEven(num))
-print(checkOdd(num))
