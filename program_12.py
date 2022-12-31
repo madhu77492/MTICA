@@ -1,14 +1,11 @@
-def printSeriesIncreasing(ch,n):
-    for i in range(1,n+1,1):
-        print(ch*i)
-    return None
-def printSeriesDecreasing(ch,n):
-    for i in range(n,0,-1):
-        print(ch*i)
-    return None
+import sqlite3 as lite
+con=lite.connect('mtica.db')
+cur=con.cursor()
+cur.execute('''
+UPDATE Cars SET Name='Mp' WHERE Id=2
+''')
+con.commit()
+con.close()
+print("Data UPDATED.")
 
-inpCh=input("Enter a character:")
-inpNum=int(input("Enter a no:"))
-printSeriesIncreasing(inpCh,inpNum)
-print('-'*40)
-printSeriesDecreasing(inpCh,inpNum)
+

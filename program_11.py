@@ -1,5 +1,11 @@
-num1=int(input("Enter a no:"))
-num2=int(input("ENter a no:"))
-res=num1+num2
+import sqlite3 as lite
+con=lite.connect('mtica.db')
+cur=con.cursor()
+cur.execute('''
+DELETE FROM Cars WHERE Name='Audi'
+''')
+con.commit()
+con.close()
+print("Data Deleted.")
 
-print(num1,'+',num2,'=',res,sep='')
+
