@@ -8,7 +8,7 @@ def frequencyDict(s):
     return frequencyDict
 
 def formatOutput(d):
-    for i in sorted(d):
+    for i in sorted(d,reverse=True):
         print(i,d[i])
     
 
