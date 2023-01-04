@@ -1,10 +1,6 @@
-def extract_digits(s):
-    digit=''
-    for i in s:
-        if i in '0123456789':
-            digit+=i
-    return digit
+#Raise an error and stop the program if x is lower than 0:
+#x=-1
+x=int(input())
 
-str1=input()
-a=extract_digits(str1)
-print("digits in:'",str1,"' is",a)
+if x<0:
+    raise Exception("Sorry,no number below zero")

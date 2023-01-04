@@ -1,10 +1,10 @@
-def count_consonant(s):
-    consonant=0
-    for i in s:
-        if i in 'BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz':
-            consonant+=1
-    return consonant
-
-str1=input()
-a=count_consonant(str1)
-print("no of  consonant in:'",str1,"' is",a)
+a=10
+b=9
+try:
+    #condition for checking for negative values
+    if a<0 or b<0:
+        #raising exception using raise keyword
+        raise ZeroDivisionError
+    print(a/b)
+except ZeroDivisionError:
+    print("Please enter valid integer value")

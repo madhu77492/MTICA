@@ -1,10 +1,4 @@
-def extract_consonant(s):
-    consonant=''
-    for i in s:
-        if i in 'BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz':
-            consonant+=i
-    return consonant
+x="Hello"
 
-str1=input()
-a=extract_consonant(str1)
-print("consonant in:'",str1,"' is",a)
+if not type(x) is int:
+    raise TypeError("Only integers are allowed")

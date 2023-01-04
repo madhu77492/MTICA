@@ -1,10 +1,3 @@
-def count_digits(s):
-    n_digit=0
-    for i in s:
-        if i in '0123456789':
-            n_digit+=1
-    return n_digit
-
-str1=input()
-a=count_digits(str1)
-print("No of digits is :'",str1,"' is",a)
+with open(r'D:\Python_Practice31\Day13\MP.txt') as fo:
+    temp=fo.read()
+    print(temp)

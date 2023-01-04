@@ -1,15 +1,13 @@
-import sqlite3 as lite
-con=lite.connect('mtica.db')
-cur=con.cursor()
-cur.execute("DROP TABLE IF EXISTS Cars")
-cur.execute('''CREATE TABLE    Cars(Id INT,Name TEXT,Price INT)''')
-print("table cars created")
-
-cur.execute("INSERT INTO Cars VALUES(1,'Audi',52642)")
-cur.execute("INSERT INTO Cars VALUES(2,'Mercedes',52643)")
-cur.execute("INSERT INTO Cars VALUES(1,'Volvo',52644)")
-cur.execute("INSERT INTO Cars VALUES(1,'Citroen',52646)")
-cur.execute("INSERT INTO Cars VALUES(1,'Hummer',52645)")
-cur.execute("INSERT INTO Cars VALUES(1,'Volkswagen',52649)")
-con.commit()
-print("values in table car inserted")
+spins=[('red','18'),('black','13'),('red','7'),('red','5'),('red','18'),('black','13'),('red','25'),('red','5'),('black','15'),
+       ('black','20'),('black','31'),('red','3')]
+def countReds( aList ):
+    count=0
+    for color,number in aList:
+        if color == 'black':
+            yield count
+            count=0
+        else:
+            count +=1
+    yield count
+gaps= [gap for gap in countReds(spins)]
+print(gaps)

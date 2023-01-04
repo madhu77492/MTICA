@@ -1,14 +1,26 @@
-def fun(str1):
-    print(str1)
+def PrintBlue():
+    print('You chose blue!\n')
     return
-fun("I'm first call to user defined function!")
-fun("Again second call to the same function")
-
-def printme(str1,n):
-    n[0]='Prasad'
-    print(str1,n)
+def PrintRed():
+    print('You chose red!\n')
+def PrintOrange():
+    print('You chose Orange!\n')
+def PrintYellow():
+    print('You chose Yellow!\n')
+def choice():
+    print("0:Blue")
+    print("1:Red")
+    print("2:Orange")
+    print("3:Yellow")
+    print("4:Quit")
     return
-
-x=['MP','Madhu']
-printme("Wakeup",x)
-print('x:',x)
+ColorSelect={0:PrintBlue,1:PrintRed,2:PrintOrange,3:PrintYellow}
+selection=0
+while True:
+    if selection==4:break
+    choice()
+    selection=int(input("select a color option:"))
+    if (selection>=0) and (selection<4):
+        ColorSelect[selection]()
+    
+    

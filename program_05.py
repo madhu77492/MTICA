@@ -1,10 +1,26 @@
-def printDetail(name,marks=77,age=22):#default
-    print("Name",name)
-    print("Marks:",marks)
-    print("Age:",age)
-    return None
-##printDetail()
-##printDetail('MP')
-##printDetail('MP',77)
-##printDetail(77,'MP')
-printDetail(marks=77,name='MP')#keyword argument
+def PrintAdd(a,b):
+    return a+b
+def PrintSub(a,b):
+    return a-b
+def PrintMul(a,b):
+    return a*b
+def PrintDiv(a,b):
+    return a/b
+def choice():
+    print("+:Addition")
+    print("-:Substraction")
+    print("*:Multiplication")
+    print("/:Division")
+    return
+CharSelect={"+":PrintAdd,"-":PrintSub,"*":PrintMul,"/":PrintDiv}
+
+while True:
+    choice()
+    selection=input("select an arithmetic operation:")
+    if selection=='q' or selection=='Q':break
+    if((selection=='+') or (selection=='-') or (selection=='*') or (selection=='/')):
+        n1=int(input("Enter first No:"))
+        n2=int(input("Enter second No:"))
+        z=CharSelect[selection](n1,n2)
+        print(n1,selection,n2,'=',z)
+    

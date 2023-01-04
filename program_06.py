@@ -1,17 +1,9 @@
-
-##print()
-##print('MP')
-##print('MP',77)
-##print('Madhu',77,'MP')
-#variable length argument
-def add(*n):
-    temp=0
-    for i in n:
-        temp+=i
-        return temp
-
-print("add():",add())
-print("add(5):",add(5))
-print("add(5,7):",add(5,7))
-print("add(5,7,2):",add(5,7,2))
-print("add(5,7,2,11,55,77,22):",add(5,7,2,11,55,77,22))
+def demo_yield():
+    print("code segment1 executed")
+    x=7
+    yield x*x
+    print("code segment2 executed")
+    yield 2
+    print("code segment3 executed")
+    yield 3
+    print("code segment4 executed")
