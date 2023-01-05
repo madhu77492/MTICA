@@ -1,9 +1,5 @@
-def printSeriesIncreasing(ch,n):
-    for i in range(1,n+1,1):
-        print(ch*i)
-    return None
-inpCh=input()
-inpNum=int(input())
-printSeriesIncreasing(inpCh,inpNum)
-print('-'*40)
-
+##def check(n):
+##    lst=n.split()
+##    return [i for i in lst]
+inp=input()
+print(check(inp(::-1))
