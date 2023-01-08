@@ -1,13 +1,16 @@
-spins=[('red','18'),('black','13'),('red','7'),('red','5'),('red','18'),('black','13'),('red','25'),('red','5'),('black','15'),
-       ('black','20'),('black','31'),('red','3')]
-def countReds( aList ):
-    count=0
-    for color,number in aList:
-        if color == 'black':
-            yield count
-            count=0
-        else:
-            count +=1
-    yield count
-gaps= [gap for gap in countReds(spins)]
-print(gaps)
+from tkinter import *
+class App:
+    def __init__(self,master):
+        frame=Frame(master)
+        frame.pack()
+        self.button=Button(frame,text="Quit",fg="red",command=quit)
+        self.button.pack(side=LEFT)
+        self.slogan=Button(frame,text="Hello",command=self.write_slogan)
+        self.slogan.pack(side=LEFT)
+
+        def write_slogan(self):
+            print("Tkinter is easy to use")
+
+        root=Tk()
+        app=App(root)
+        

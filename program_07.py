@@ -1,9 +1,7 @@
-def sum_num(x):
-    res=0
-    for i in range(x+1):
-        res=res + i
-        yield("i=",i,"res=",res)
-    return res
-ob=sum_num(10)
-for i in range(11):
-    print(next(ob))
+import datetime
+ob=datetime.datetime.now()
+
+str1=str(ob.day)+'_'+str(ob.month)+'_'+str(ob.year)
+str2=str(ob.hour)+'_'+str(ob.minute)+'_'+str(ob.second)
+str3='Backup_'+str1+'_'+str2+'.db'
+print(str3)

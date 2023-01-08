@@ -1,6 +1,7 @@
-def result(s1,s2):
-    return [int(i)+int(j) for i,j in  zip(s1,s2)]
-inp1=input().strip().split()
-inp2=input().strip().split()
-print(*result(inp1,inp2))
-            
+import sys
+print(sys.argv)
+for i in range(len(sys.argv)):
+    if i==0:
+        print("Function name:{0}".format(sys.argv[0]))
+    else:
+        print("{0}.argument:{1}".format(i,sys.argv[i]))

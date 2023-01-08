@@ -1,9 +1,29 @@
-def gen_int(n):
-    for i in range(n):
-        yield i
-def gen_2(gen):
-    for n in gen:
-        if n%2:
-            yield n
-for i in gen_2(gen_int(10)):
-    print(i)
+from tkinter import *
+
+master=Tk()
+l1=Label(master,text="First Number")
+l1.grid(row=0,column=0)
+
+l2=Label(master,text="Second Number")
+l2.grid(row=1,column=0)
+
+e1=Entry(master)
+e2=Entry(master)
+
+e1.grid(row=0,column=1)
+e2.grid(row=1,column=1)
+mainloop()
+def show_entry_fields():
+    print("First Number:",e1.get())
+    print("Second Number:",e2.get())
+def add():
+    temp=int(e1.get())+int(e2.get())
+    print(e1.get(),'+',e2.get(),'=',temp)
+b1.Button(master,text='Quit',command=master.quit)
+b1.grid(row=3,column=0)
+
+b2.Button(master,text='+',command=add)
+b2.grid(row=3,column=1)
+mainloop()
+
+

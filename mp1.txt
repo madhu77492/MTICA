@@ -1,0 +1,2 @@
+This line goes to mp1.txt
+hi mp
